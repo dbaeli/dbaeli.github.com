@@ -9,7 +9,7 @@
   <meta name="author" content="Dimitri BAELI">
 
   
-  <meta name="description" content="Dbaeli Oct 1st, 2012 Oct 1st, 2012 Recent Posts GitHub Repos Status updating... @dbaeli on GitHub $.domReady(function(){ if (!window.jXHR){ var jxhr &hellip;">
+  <meta name="description" content="Dbaeli Oct 1st, 2012 Oct 1st, 2012 Recent Posts Latest Tweets Status updating... $.domReady(function(){ getTwitterFeed("dbaeli", 4, false); }); &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -141,36 +141,6 @@
 </section>
 
 <section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
-  </ul>
-  
-  <a href="https://github.com/dbaeli">@dbaeli</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'dbaeli',
-            count: 3,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-<section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
     <li class="loading">Status updating...</li>
@@ -195,6 +165,36 @@
     <li class="build_status"><a href="https://buildhive.cloudbees.com/job/dbaeli/job/conf4j"><img src="https://buildhive.cloudbees.com/job/dbaeli/job/conf4j/badge/icon"/></a> conf4j</li>
     <li class="build_status"><a href=" https://buildhive.cloudbees.com/job/dbaeli/job/spell6r "><img src="https://buildhive.cloudbees.com/job/dbaeli/job/spell6r/badge/icon"/></a> spell6r</li>
    </ul>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/dbaeli">@dbaeli</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'dbaeli',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
