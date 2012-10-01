@@ -1,0 +1,11 @@
+{% if site.buildhive %}
+<section>
+  <h1>Build Status</h1>
+  <ul id="buildhive">
+    <li class="build_status"><a href="{{ site.buildhive_job_url }}"><img src="{{ site.buildhive_status_url }}"/></a> blog </li>
+    <li class="build_status"><a href="{{ site.buildhive_job_ez18n }}"><img src="{{ site.buildhive_status_ez18n }}"/></a> ez18n</li>
+    <li class="build_status"><a href="{{ site.buildhive_job_conf4j }}"><img src="{{ site.buildhive_status_conf4j }}"/></a> conf4j</li>
+    <li class="build_status"><a href=" {{ site.buildhive_job_spell6r }} "><img src="{{ site.buildhive_status_spell6r }}"/></a> spell6r</li>
+   </ul>
+</section>
+{% endif %}
